@@ -1,0 +1,42 @@
+{% extends 'base.html' %} 
+
+{% block title %}Contact Us{% endblock title %}
+{% block contactactive %} active {% endblock contactactive %}
+
+{% block body %}
+
+
+<div class="container-fluid px-0 my-0">
+    <img src="/static/img/icecreamcontact.jpg" class="d-block w-100" alt="contact us" style="opacity:1;" height=698 >
+</div>
+
+<div class="container">
+   <h3 class="my-4" style="position:absolute; top:180px; right:750px; color:white;"><b> Contact Us</b></h3> 
+      <form method="post" action="/contact" style="position:absolute; top:250px; right:630px; color:white; width:350px;">
+      {% csrf_token %}
+          <div class="form-group">
+             <label for="name" class="form-label"><b>Name</b></label>
+             <input type="text" style="opacity:0.8;" class="form-control" id="name" name="name" placeholder="Enter your Name">
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label"><b>Email address</b></label>
+            <input type="email" style="opacity:0.8;" class="form-control" id="email" name="email" placeholder="Enter Your Email Adress">
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label"><b>Phone No.</b></label>
+            <input type="phone" style="opacity:0.8;" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+         </div>
+
+         <div class="form-group mb-2">
+            <label for="desc" class="form-label"><b>Enter Your Query</b></label>
+            <textarea style="opacity:0.8;" class="form-control" id="desc" rows="2" name="desc" placeholder="Enter reason of contact"></textarea>
+         </div>
+         <div class="text-center">
+           <button class="btn btn-primary" type="submit">Submit</button>
+         </div>
+       </form>
+</div>
+
+{% endblock body %}

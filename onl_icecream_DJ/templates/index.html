@@ -1,0 +1,165 @@
+{% extends 'base.html' %} 
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<div class = "container-fluid my-0 px-5" >
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/img/icecream.jpg" class="d-block w-100 " alt="Tasty Ice-cream" height="550">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cup Ice Cream</h5>
+              <p>The freezing cup of joy.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/softy.jpg" class="d-block w-100" alt="Soft Softy" height="550">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Softy</h5>
+              <p>The perfect cone that your heart longs for.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/familypack.jpg" class="d-block w-100" alt="Familypack For Your Happy Family" height="550">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Familypack</h5>
+              <p>Real smiles and real ingredients is what we provide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+<!--Album-->
+<div class="container my-4 px-5">
+<h1 class="my-4 text-center text-secondary" > Select Your Tasty Ice Cream </h1>  
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+      <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/icecream1.jpg" class="d-block w-100" alt="vanilla flavoured icecream" height=264>
+            <div class="card-body" >
+              <p class="card-text">vanilla flavoured icecream</p>
+              <p class="card-text text-secondary"><h6>Tasty Delicious icecream with vanilla and protein ingredients</h6></p>
+              <p class="card-text"><b>Rs.120</b></p>
+              <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div> 
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/softy1.jpg" class="d-block w-100" alt="Strawberry flavoured softy">
+
+            <div class="card-body">
+                <p class="card-text">Strawberry flavoured icecream</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious Softy with Strawberry and protein ingredients</h6></p>
+                <p class="card-text"><b>Rs.120</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/familypack1.jpg" class="d-block w-100" alt="chocolate flavoured Familypack">
+
+            <div class="card-body">
+                <p class="card-text">chocolate flavoured Familypack</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious icecream with Chocolaty and protein ingredients for your sweet family</h6></p>
+                <p class="card-text"><b>Rs.120</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/familypack2.jpg" class="d-block w-100 " alt="vanilla flavoured Familypack">
+
+            <div class="card-body">
+                <p class="card-text">Vanilla Flavoured Familypack</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious icecream with vanilla and protein ingredients for your gorgeous family</h6></p>
+                <p class="card-text"><b>Rs.80</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/cone.jpg" class="d-block w-100" alt="caremel flavoured cone">
+
+            <div class="card-body">
+                <p class="card-text">caremel flavoured cone</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious Cone with Caramel and Dry fruit ingredients</h6></p>
+                <p class="card-text"><b>Rs.80</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/chocobar.jpg" class="d-block w-100 py-1" alt="Milky and chocolaty chocobar">
+
+            <div class="card-body">
+                <p class="card-text">Milky and chocolaty chocobar</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious chocobar with Chocolaty and Milky ingredients</h6></p>
+                <p class="card-text"><b>Rs.80</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/icecream3.jpg" class="d-block w-100" alt="Cassi flavoured Ice cream" height=460>
+
+            <div class="card-body">
+                <p class="card-text">Cassi flavoured Ice cream</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious icecream with Cassi and protein ingredients</h6></p>
+                <p class="card-text"><b>Rs.499</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/icecream4.jpg" class="d-block w-100" alt="Caramel flavoured Icecream" height=460>
+
+            <div class="card-body">
+                <p class="card-text">Caramel Flavoured Icecream</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious icecream with caremel and dry  ingredients</h6></p>
+                <p class="card-text"><b>Rs.499</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/img/softy3.jpg" class="d-block w-100" alt="Chocolate flavoured softy" height=460>
+            <div class="card-body">
+                <p class="card-text">Chocolate flavoured softy</p>
+                <p class="card-text text-secondary"><h6>Tasty Delicious Softy with chocolate and Milky ingredients</h6></p>
+                <p class="card-text"><b>Rs.499</b></p>
+                <p class="text-center"><a class="btn btn-lg btn-primary py-1" href="#">Buy</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+{% endblock body %}
